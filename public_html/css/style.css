@@ -1,0 +1,186 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun. 2, 2020, 2:27:42 p.m.
+    Author     : eva
+*/
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.container{
+    height:550px;
+    width:400px;
+    background-color: cornsilk;
+    padding:20px;
+    border:1px solid darkblue;
+    box-shadow: 0 0 8px 3px brown;
+    border-radius: 10px;
+}
+.title{
+    font-size: 1.5em;
+    padding-top: 20px;
+    text-align: center;
+    color: cornflowerblue;
+}
+.question{
+    padding:20px;
+    font-size: 1.2em;
+    background:bisque;
+    color: black;
+    border:1px solid lightseagreen;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.option{
+    display:inline-block;
+    padding:10px 0 10px 15px;
+    vertical-align: middle;
+    margin:0px 0 10px 10px;
+    background-color:lightsteelblue;
+    border: 1px solid purple;
+    border-radius: 5px;
+    width:350px;
+
+}
+.option.hover{
+    background-color: royalblue;
+    color: seagreen;
+}
+.answer-btn{
+    background-color: skyblue;
+    color:white;
+    outline:none;
+    border:1px solid lightblue;
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    cursor:pointer;
+    vertical-align: middle;
+    grid-area:aswbtn;
+}
+.next-btn{
+    background-color: skyblue;
+    color:white;
+    outline:none;
+    border:none;
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    cursor:pointer;
+    grid-area: nextbtn;
+}
+.help-btn{
+    background-color:lightgray;
+    color:blueviolet;
+    outline:none;
+    border:none;
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    cursor:pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    grid-area:helpbtn;
+}
+.reset-btn{
+    background-color:lightgray;
+    color:blueviolet;
+    outline:none;
+    border:none;
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    cursor:pointer;
+    grid-area:resetbtn;
+}
+.result-btn{
+    margin-top: 20px;
+    background-color:sandybrown;
+    color:white;
+    outline:none;
+    border:none;
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    cursor:pointer;
+    grid-area:resetbtn;
+}
+.answer{
+    font-size: 20px;
+    width:250px;
+    height:100px;;
+    color:green;
+    margin:auto;
+    text-align: center;
+    border:1px solid green;
+    border-radius: 5px;
+    display:none;  
+    text-align: center;
+    padding:40px 10px 10px 10px;
+}
+.result{
+    font-size: 20px;
+    width:200px;
+    height: 100px;;
+    color:coral;
+    margin:auto;
+    text-align: center;
+    border-radius: 5px;
+    display:none;
+    text-align: center;
+}
+.btn{
+    margin-top: 10px;
+    margin-left:20px;
+    display: grid;
+    grid-template-areas: 
+        'aswbtn nextbtn'
+        'helpbtn resetbtn';
+    grid-template-columns: auto auto; 
+    grid-gap: 10px;
+
+}
+.step{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+
+    width: 150px;
+    height: 20px;
+    margin-bottom: 10px;
+
+}
+.step>div{
+    border:1px solid gray;
+    background-color: cornsilk;
+}
+.help{
+    display:none;
+    background-color: antiquewhite;
+    width: 300px;
+    font-size: 16px;
+    color: brown;
+}
+.back-btn {
+    font-size: 20px;
+    background-color: lightgray;
+    color: blueviolet;
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 45px;
+    display: none;
+}
